@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/youtubeaiko/static/css/main.6fa0c11c.css",
+    "main.js": "/youtubeaiko/static/js/main.2c85ff74.js",
+    "index.html": "/youtubeaiko/index.html",
+    "main.6fa0c11c.css.map": "/youtubeaiko/static/css/main.6fa0c11c.css.map",
+    "main.2c85ff74.js.map": "/youtubeaiko/static/js/main.2c85ff74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fa0c11c.css",
+    "static/js/main.2c85ff74.js"
+  ]
+}
