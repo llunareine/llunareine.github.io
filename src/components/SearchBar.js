@@ -1,8 +1,11 @@
 // Поиск фильмов и видео по запросу
-
+import React, {useState, useEffect, useRef} from 'react';
 const SearchBar = ({ OnSearchSubmit }) => {
     const [term, setTerm] = useState('');
-
+    const inputRef = useRef(null);
+    useEffect(() => {
+        inputRef.current.focus();
+      }, [])
     const onFormSubmit = event => {
         event.preventDefault();
 
@@ -12,7 +15,8 @@ const SearchBar = ({ OnSearchSubmit }) => {
             <div>
                 <form onSubmit={onFormSubmit}>
                     <div className="ui fluid massive icon input">
-                        <input 
+                        <input
+                        ref={inputRef} 
                         type="text" 
                         placeholder="Find videos..." 
                         onChange={e => setTerm({term: e.target.value })}>
